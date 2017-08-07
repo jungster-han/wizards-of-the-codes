@@ -7,7 +7,8 @@ export default class MainPage extends React.Component{
     var homeStyle = {
       marginTop: "-100px",
       backgroundImage: "url("+"https://s-media-cache-ak0.pinimg.com/originals/e5/aa/b4/e5aab4e49c9ac29532e4b187e4059ae3.jpg"+")",
-      height: "155%"
+      height: "155%",
+      backgroundSize : "cover"
     }
     var homeTexts = {
       color : "white",
@@ -34,9 +35,10 @@ export default class MainPage extends React.Component{
             <h3>By company that is truely local, social and mobile!</h3>
             <h3>It's no magic, it's skill.</h3>
             <ReactPlayer style={ vidStyle } url='https://youtu.be/IXuFrtmOYKg?t=4s' playing />
-            <h4 style = {bottomText}>We are currently under construction. Come back soon and we'll have more to show you.
-            <h5>-Han Jung</h5></h4>
-
+            <div style = {bottomText}>
+          <h4>We are currently under construction. Come back soon and we'll have more to show you.</h4>
+            <h5>-Han Jung</h5>
+            </div>
         </div>
       </div>
     </div>

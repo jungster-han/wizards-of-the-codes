@@ -1,5 +1,5 @@
 import React from 'react';
-import {IndexLink, Link} from 'react-router';
+import {IndexLink, Link } from 'react-router';
 import {Nav, Navbar, NavItem, MenuItem, NavDropdown} from 'react-bootstrap';
 
 export default class Navs extends React.Component {
@@ -8,14 +8,10 @@ export default class Navs extends React.Component {
   }
   render() {
     const bannerStyle = {
-      height: "auto",
-      width: "auto",
-      maxHeight: "50 px",
-      maxWidth: "250 px",
-      margin:"-20px"
+      height: "50px",
+      width: "auto"
     }
-    const navStyle = {
-    }
+    const aboutClass = location.pathname.match(/^\/aboutme/) ? "active" : "";
     return (
       <Navbar style = { navStyle }>
         <Navbar.Header>
@@ -26,15 +22,20 @@ export default class Navs extends React.Component {
           </Navbar.Brand>
         </Navbar.Header>
         <Nav>
-          <NavDropdown eventKey={3} title="Coding Tutorials" id="basic-nav-dropdown">
-            <MenuItem eventKey={3.1}>Linux</MenuItem>
-            <MenuItem eventKey={3.2}>C++</MenuItem>
-            <MenuItem eventKey={3.3}>React.js</MenuItem>
+          <NavDropdown eventKey={2} title="Coding Tutorials" id="basic-nav-dropdown">
+            <MenuItem eventKey={2.1}>Linux</MenuItem>
+            <MenuItem eventKey={2.2}>C++</MenuItem>
+            <MenuItem eventKey={2.3}>React.js</MenuItem>
             <MenuItem divider/>
-            <MenuItem eventKey={3.4}>Rails, Python and others</MenuItem>
+            <MenuItem eventKey={2.4}>Rails, Python and others</MenuItem>
           </NavDropdown>
-          <NavItem eventKey={1} href="#">Products</NavItem>
-          <NavItem eventKey={2} href="https://www.linkedin.com/in/han-jung-68bb38ab/">This just goes to my Linkedin</NavItem>
+          <NavItem eventKey={3} href="#">Products</NavItem>
+          <li class={aboutClass}>
+            <Link to="settings" onClick={this.toggleCollapse.bind(this)}>
+              {this.props.children}
+        <NavItem eventKey={4} href="#">About Us</NavItem>
+        </Link>
+        </li>
         </Nav>
       </Navbar>
     );

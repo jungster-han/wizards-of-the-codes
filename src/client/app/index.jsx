@@ -15,7 +15,7 @@ ReactDOM.render((
       <Route path="/Linux" component={LinuxPage}/>
       <Route path="/Cpp" component={CppPage}/>
       <Route path="/React" component={ReactPage}/>
-      <Route path="/AboutMe" component={AboutMe}/>
+      <Route path="/AboutMe" name="aboutme" component={AboutMe}/>
     </div>
   </Router>
 ), document.getElementById('app'))
