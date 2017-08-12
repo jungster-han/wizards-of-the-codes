@@ -1,4 +1,5 @@
 node_module/
 .babelrc
 npm-debug.log
-
+.DS_Store
+/*.env

@@ -7,7 +7,7 @@
     "start": "node ./src/client/server.js",
     "watch": "webpack -d --watch",
     "build": "webpack",
-    "serve": "serve ./src/client/public"
+    "serve": "webpack-dev-server --content-base ./src/public"
   },
   "author": "Han Jung",
   "license": "MIT",
