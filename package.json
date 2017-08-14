@@ -2,9 +2,9 @@
   "name": "wizards-of-the-codes",
   "version": "1.0.0",
   "description": "wizards of the codes web app",
-  "main": "/src/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node ./src/client/server.js",
+    "start": "node ./src/server.js",
     "watch": "webpack -d --watch",
     "build": "webpack",
     "serve": "webpack-dev-server --content-base ./src/public"
