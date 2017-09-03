@@ -1,14 +1,20 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import $ from 'jquery';
+import LogIn from './LogIn';
 
-
-export default class Nav extends React.Component {
+export default class MainNav extends React.Component {
+  clickCollapse(){
+    if($("#collapse_button").is(":visible"))
+      document.getElementById("collapse_button").click();
+  }
   render() {
     return (
       <nav className="navbar navbar-inverse navbar-pills">
         <div className="container-fluid">
           <div className="navbar-header">
-            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <button id="collapse_button" type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              {/*these are just 3 lines on the toggle button*/}
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
@@ -17,14 +23,13 @@ export default class Nav extends React.Component {
           </div>
           <div className="collapse navbar-collapse" id="myNavbar">
             <ul className="nav navbar-nav">
-              <li><Link to='/'>Home</Link></li>
-              <li><Link to='/product'>Product</Link></li>
+              <li onClick={this.clickCollapse}><Link to='/'>Home</Link></li>
+              <li onClick={this.clickCollapse}><Link to='/portfolio'>Portfolio</Link></li>
+              <li onClick={this.clickCollapse}><Link to='/product'>Product</Link></li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
-              <li><Link to="/aboutus">About Us</Link></li>
-              <li>
-                <a href="#"><span className="glyphicon glyphicon-log-in"></span>Login</a>
-              </li>
+              <li onClick={this.clickCollapse}><Link to="/aboutus">About Us</Link></li>
+                <LogIn />
             </ul>
           </div>
         </div>
