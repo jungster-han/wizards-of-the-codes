@@ -9,27 +9,35 @@ export default class Home extends React.Component {
       textAlign: "right",
       paddingRight: "10%",
       fontFamily: "Merriweather, serif",
-      fontSize : "x-large"
+      fontSize: "x-large"
     }
     const center = {
-      margin:"0 auto",
-      marginTop:"50px"
+      margin: "0 auto",
+      marginTop: "50px"
     }
     const todaysVideo = {
       fontFamily: "Merriweather, serif",
-      textAlign:"center"
+      textAlign: "center",
+      width: "100%",
+      maxWidth: "500px",
+      height: "auto"
+    }
+    const vwrapperStyle = {
+      position: "relative"
     }
     return (
       <div className="container">
-        <CurrentTime />
+        <CurrentTime/>
         <div style={homeStyle}>
           Welcome to Wizards of the Codes
         </div>
         <div style={todaysVideo}>
           <h3>Today's video</h3>
         </div>
-        <ReactPlayer style={center} url='https://www.youtube.com/watch?v=N_vwNEa-Ph8' playing/>
-    </div>
+        <div className="video-wrapper" style = {vwrapperStyle}>
+          <ReactPlayer width="100%" style={center} url='https://www.youtube.com/watch?v=N_vwNEa-Ph8' playing/>
+        </div>
+      </div>
     );
   }
 }

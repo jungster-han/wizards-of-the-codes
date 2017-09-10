@@ -7,7 +7,8 @@ export default class Layout extends React.Component {
     var layoutStyle={
       backgroundColor: "rgba(255, 255, 255, 0.5)",
       width:"90vw",
-      height:"70vw",
+      height:"100%",
+      paddingBottom:"3%",
       margin:"0 auto",
       borderRadius:"10px",
     }
