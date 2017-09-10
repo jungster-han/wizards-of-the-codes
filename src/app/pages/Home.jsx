@@ -35,7 +35,7 @@ export default class Home extends React.Component {
           <h3>Today's video</h3>
         </div>
         <div className="video-wrapper" style = {vwrapperStyle}>
-          <ReactPlayer width="100%" style={center} url='https://www.youtube.com/watch?v=N_vwNEa-Ph8' playing/>
+          <ReactPlayer width="100%" style={center} url='https://www.youtube.com/watch?v=C9XETVNMwMs&t=708s' playing/>
         </div>
       </div>
     );
