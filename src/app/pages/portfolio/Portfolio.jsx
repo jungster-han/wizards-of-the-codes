@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
-import {Switch, Route} from 'react-router-dom';
 import RecipeBox from "./RecipeBox";
+import PortfolioNav from "../../components/PortfolioNav";
 
 export default class Portfolio extends Component {
-  render(){
-    return(
-      <main>
-    <Switch>
-      <Route path='/recipebox' component={RecipeBox}/>
-    </Switch>
-  </main>
-)
-}
+  render() {
+    return (
+      <div>
+        <PortfolioNav />
+
+      </div>
+    )
+  }
 }

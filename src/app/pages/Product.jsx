@@ -5,10 +5,12 @@ export default class Product extends React.Component {
 
   render() {
     const homeStyle = {
-      textAlign: "right",
+      margin:"0 auto",
+      marginTop: "5%",
       padding: "10%",
       fontFamily: "Merriweather, serif",
-      fontSize : "x-large"
+      fontSize : "large",
+      width:"70vw"
     }
     return (
       <div className="container">

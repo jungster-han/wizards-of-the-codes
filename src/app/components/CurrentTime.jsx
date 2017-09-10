@@ -18,7 +18,7 @@ export default class CurrentTime extends React.Component{
 
   render() {
     const timeStyle = {
-      color:"white",
+      marginTop:"4%",
       textAlign: "right",
       fontFamily: "Merriweather, serif",
       fontSize : "x-large",

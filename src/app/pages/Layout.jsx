@@ -4,10 +4,17 @@ import Main from './MainPage';
 
 export default class Layout extends React.Component {
   render(){
+    var layoutStyle={
+      backgroundColor: "rgba(255, 255, 255, 0.5)",
+      width:"90vw",
+      height:"70vw",
+      margin:"0 auto",
+      borderRadius:"10px",
+    }
     return(
       <div>
         <MainNav />
-        <Main />
+        <Main style={layoutStyle} />
       </div>
     );
   }

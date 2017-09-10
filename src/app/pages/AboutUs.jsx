@@ -3,9 +3,12 @@ import React from 'react';
 export default class AboutUs extends React.Component {
   render() {
     const homeStyle = {
+      margin:"0 auto",
+      marginTop: "5%",
       padding: "10%",
       fontFamily: "Merriweather, serif",
-      fontSize: "x-large"
+      fontSize: "large",
+      width:"70vw"
     }
     return (
       <div className="container">
