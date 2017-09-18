@@ -19,7 +19,7 @@ export default class MainNav extends React.Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand" href="https://wizardsofthecodes.herokuapp.com">Wizards of the Codes</a>
+            <a className="navbar-brand" href="http://wizardsofthecodes.com">Wizards of the Codes</a>
           </div>
           <div className="collapse navbar-collapse" id="myNavbar">
             <ul className="nav navbar-nav">
