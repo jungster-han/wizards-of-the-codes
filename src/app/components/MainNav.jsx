@@ -10,7 +10,7 @@ export default class MainNav extends React.Component {
   }
   render() {
     return (
-      <nav className="navbar navbar-inverse navbar-pills">
+      <nav className="navbar navbar-default navbar-pills">
         <div className="container-fluid">
           <div className="navbar-header">
             <button id="collapse_button" type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">

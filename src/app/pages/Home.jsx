@@ -12,16 +12,10 @@ export default class Home extends React.Component {
       fontSize: "x-large"
     }
     const center = {
-      margin: "0 auto",
+      margin: "auto",
       marginTop: "50px"
     }
-    const todaysVideo = {
-      fontFamily: "Merriweather, serif",
-      textAlign: "center",
-      width: "100%",
-      maxWidth: "500px",
-      height: "auto"
-    }
+
     const vwrapperStyle = {
       position: "relative"
     }
@@ -31,11 +25,11 @@ export default class Home extends React.Component {
         <div style={homeStyle}>
           Welcome to Wizards of the Codes
         </div>
-        <div style={todaysVideo}>
-          <h3>Today's video</h3>
+        <div>
+          <h5>Next set of Magic is coming out end of September. Dont't miss the prerelease event on Sept 23-24.</h5>
         </div>
-        <div className="video-wrapper" style = {vwrapperStyle}>
-          <ReactPlayer width="100%" style={center} url='https://www.youtube.com/watch?v=C9XETVNMwMs&t=708s' playing/>
+        <div className="video-wrapper" style = { vwrapperStyle }>
+          <ReactPlayer width="70%" style= { center } url='https://youtu.be/ZOcCTSL7dmw' playing/>
         </div>
       </div>
     );
